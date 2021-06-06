@@ -16,35 +16,35 @@ html {
   position: relative;
   overflow: hidden;
 }
-/* .logo{
+.logo{
   width: 62px;
   height: 75px;
   background: url("assets/logo.png");
-  top: 13px;
-  right: 6px;
+  top: 8px;
+  right: 20px;
   z-index: 4;
-} */
+}
 [class^="pp_box__"] {
   height: 90px;
   width: 970px;
-  background: url("assets/97090bg.jpg");
+  background: url("assets/bg.jpg");
   top: 0px;
   left: 0px;
   z-index: 3;
 }
 .pp_box__2 {
-  background: url("assets/97090bg.jpg");
+  /* background: url("assets/97090bg.jpg"); */
   left: 0px;
   opacity: 0;
   z-index: 2;
 }
-/* .pp_box_logo {
+.pp_box_logo {
   height: 41px;
   width: 102px;
   background: url("assets/water\ logo.png");
-  top: 13px;
-  left: 10px;
-} */
+  top: 20px;
+  left: 15px;
+}
 .pp_box_models {
   height: 88px;
   width: 310px;
@@ -83,6 +83,23 @@ html {
   left: 0;
   right: 0;
   margin: 0 auto;
+/* -webkit-animation: makeUpDown 6s infinite 1s; */
+ animation: makeUpDown 5s both infinite 0.3s;
+ opacity: 1;
+}
+@keyframes makeUpDown {
+    0%,10% {
+      opacity: 1;
+      margin-top: 15%;
+  }
+  20%{
+    opacity: 1;
+    margin-top: 30%;
+  }
+  50%,70%,80%,90%,100% {
+      opacity: 1;
+      margin-top: 0%;
+  }
 }
 
 .fadeInZoom {
