@@ -93,21 +93,17 @@ html {
   right: 0;
   margin: 0 auto;
 /* -webkit-animation: makeUpDown 6s infinite 1s; */
- animation: makeUpDown 5s both infinite 0.3s;
- opacity: 1;
-}
-@keyframes makeUpDown {
-    0%,10% {
-      opacity: 1;
-      margin-top: 15%;
+  animation: makeUpDown 5s both infinite 0s;
+  opacity: 1;
   }
-  20%{
+  @keyframes makeUpDown {
+  0% {
     opacity: 1;
-    margin-top: 30%;
+    margin-top: 15%;
   }
-  50%,70%,80%,90%,100% {
-      opacity: 1;
-      margin-top: 0%;
+  50%,70% {
+    opacity: 1;
+    margin-top: 0%;
   }
 }
 
@@ -221,11 +217,11 @@ html {
     transform: scale3d(1, 1, 1);
   }
 }
-@keyframes makeUpDown {
+/* @keyframes makeUpDown {
     0%,100%{
         transform: translateY(150px);
     }
     10%,90%{
         transform: translateY(0px);
     }
-}
+} */
